@@ -8,8 +8,6 @@ It calculates inheritance shares for legal heirs including sons, daughters, pare
 
 ## ✨ Features
 
-### 🎯 Accurate Islamic Calculations
-Based on **Hanafi school of thought** and **Pakistani inheritance laws**.
 
 ### ⚖️ Gender-Specific Distribution
 Different rules for **male and female deceased**.
@@ -43,8 +41,7 @@ Works seamlessly across **mobile, tablet, and desktop**.
 ## 🚀 Getting Started
 
 ### 🧾 Prerequisites
-- **Node.js** (version 14 or higher)
-- **npm** or **yarn**
+- **npm** 
 
 ### ⚙️ Installation
 
