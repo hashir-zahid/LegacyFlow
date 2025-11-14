@@ -1,0 +1,312 @@
+/* ===========================
+   Input Card
+   =========================== */
+
+.input-card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ===========================
+   Form Elements
+   =========================== */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-select,
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-select:focus,
+.form-input:focus {
+  outline: none;
+  border-color: #059669;
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* ===========================
+   Heirs Section
+   =========================== */
+
+.heirs-section {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.heirs-title {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.spouse-input {
+  margin-top: 0.5rem;
+}
+
+/* ===========================
+   Parents Section
+   =========================== */
+
+.parents-section {
+  margin: 1rem 0;
+}
+
+.parents-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  padding: 0.75rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.checkbox-label:hover {
+  background: #f1f5f9;
+  border-color: #d1d5db;
+}
+
+.checkbox-input {
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: #059669;
+  cursor: pointer;
+}
+
+/* ===========================
+   Will Section
+   =========================== */
+
+.will-section {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.will-title {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.will {
+  margin-top: 1rem;
+}
+
+.will-input {
+  margin-top: 0.5rem;
+}
+
+.will-note {
+  font-size: 0.75rem;
+  color: #dc2626;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  background: #fef2f2;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  border-left: 3px solid #dc2626;
+}
+
+/* ===========================
+   Calculate Button
+   =========================== */
+
+.calculate-button {
+  width: 100%;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+  margin-top: 0.5rem;
+}
+
+.calculate-button:hover {
+  background: linear-gradient(135deg, #047857 0%, #059669 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
+}
+
+.calculate-button:active {
+  transform: translateY(0);
+}
+
+/* ===========================
+   Input Groups Styling
+   =========================== */
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+
+@media (max-width: 767px) {
+  .input-card {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.125rem;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .form-content {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-card {
+    padding: 0.75rem;
+  }
+
+  .form-select,
+  .form-input {
+    padding: 0.625rem 0.875rem;
+  }
+
+  .calculate-button {
+    padding: 0.875rem 1.25rem;
+  }
+}
+
+/* ===========================
+   Accessibility
+   =========================== */
+
+.form-input:focus-visible,
+.form-select:focus-visible,
+.calculate-button:focus-visible {
+  outline: 2px solid #059669;
+  outline-offset: 2px;
+}
+
+.checkbox-input:focus-visible {
+  outline: 2px solid #059669;
+  outline-offset: 2px;
+}
+
+/* ===========================
+   Animation Enhancements
+   =========================== */
+
+.form-group {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   Print Styles
+   =========================== */
+
+@media print {
+  .input-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .calculate-button {
+    display: none;
+  }
+}
